@@ -1,92 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Farmácia Hélio + Biolab</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trifor Caps – Farmácia Hélio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #fff; }
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
+    .wrapper {
+      position: relative;
+      display: block;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
 
-body{
-  background:#ffffff;
-  display:flex;
-  justify-content:center;
-}
+    .banner {
+      width: 100%;
+      display: block;
+    }
 
-.container{
-  position:relative;
-  width:100%;
-  max-width:1024px;
-}
+    /* Área dos 3 botões sobre a imagem */
+    .btn-area {
+      position: absolute;
+      top: 78.2%;
+      left: 0;
+      width: 100%;
+      height: 8%;
+      display: flex;
+    }
 
-.container img{
-  width:100%;
-  display:block;
-}
+    .btn-overlay {
+      flex: 1;
+      height: 100%;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      text-decoration: none;
+      display: block;
+      /* Para depurar, descomente abaixo: */
+      /* background: rgba(255,0,0,0.25); */
+    }
 
-.hotspot{
-  position:absolute;
-  display:block;
-  z-index:10;
-}
-
-/* Botões invisíveis */
-.whatsapp{
-  left:4%;
-  top:70.2%;
-  width:31%;
-  height:7.7%;
-}
-
-.mapa{
-  left:36.5%;
-  top:70.2%;
-  width:28%;
-  height:7.7%;
-}
-
-.ligar{
-  left:66.5%;
-  top:70.2%;
-  width:30%;
-  height:7.7%;
-}
-
-.mapa-endereco{
-  left:4%;
-  top:80%;
-  width:47%;
-  height:9%;
-}
-</style>
+    /* Botões visíveis abaixo (fallback mobile) */
+    .btn-fallback {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 20px 16px;
+      background: #f0f0f0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .btn-fallback a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #fff;
+    }
+    .btn-whats  { background: #25D366; }
+    .btn-maps   { background: #1a3a5c; }
+    .btn-phone  { background: #0d2240; }
+  </style>
 </head>
-
 <body>
 
-<div class="container">
+<div class="wrapper">
+  <img
+    class="banner"
+    src="https://raw.githubusercontent.com/farmaciaheliosobral-afk/farmacia-helio-trifor/main/landing-trifor.png.png"
+    alt="Trifor Caps – Farmácia Hélio"
+  />
 
-  <img src="landing-trifor.png.png" alt="Farmácia Hélio + Biolab">
+  <div class="btn-area">
+    <!-- WhatsApp -->
+    <a
+      class="btn-overlay"
+      href="https://wa.me/5588992237250"
+      target="_blank"
+      aria-label="Falar no WhatsApp"
+    ></a>
 
-  <a class="hotspot whatsapp"
-     href="https://wa.me/5588992237250?text=Ol%C3%A1%21%20Recebi%20uma%20amostra%20de%20Trifor%20Caps%20atrav%C3%A9s%20da%20parceria%20Biolab%20e%20gostaria%20de%20informa%C3%A7%C3%B5es."
-     target="_blank">
+    <!-- Como Chegar -->
+    <a
+      class="btn-overlay"
+      href="https://www.google.com/maps/search/Avenida+Dom+José+Tupinambá+da+Frota+1443+Sobral+CE"
+      target="_blank"
+      aria-label="Como Chegar"
+    ></a>
+
+    <!-- Ligar -->
+    <a
+      class="btn-overlay"
+      href="tel:+558836111227"
+      aria-label="Ligar para a Farmácia"
+    ></a>
+  </div>
+</div>
+
+<!-- Botões visíveis abaixo da imagem -->
+<div class="btn-fallback">
+  <a class="btn-whats" href="https://wa.me/5588992237250" target="_blank">
+    💬 WhatsApp — (88) 9.9223-7250
   </a>
-
-  <a class="hotspot mapa"
-     href="https://www.google.com/maps/search/?api=1&query=Avenida%20Dom%20Jos%C3%A9%20Tupinamb%C3%A1%20da%20Frota%201443%20Centro%20Sobral%20CE"
-     target="_blank">
+  <a class="btn-maps" href="https://www.google.com/maps/search/Avenida+Dom+José+Tupinambá+da+Frota+1443+Sobral+CE" target="_blank">
+    📍 Como Chegar — Ver no Mapa
   </a>
-
-  <a class="hotspot ligar"
-     href="tel:8836111227">
+  <a class="btn-phone" href="tel:+558836111227">
+    📞 Ligar — (88) 3611-1227
   </a>
-
-  <a class="hotspot mapa-endereco"
-     href="https://www.google.com/maps/search/?api=1&query=Avenida%20Dom%20Jos%C3%A9%20Tupinamb%C3%A1%20da%20Frota%201443%20Centro%20Sobral%20CE"
-     target="_blank">
-  </a>
-
 </div>
 
 </body>
