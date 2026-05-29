@@ -19,7 +19,6 @@
       display: block;
     }
 
-    /* Área dos 3 botões sobrepostos na imagem */
     .btn-area {
       position: absolute;
       top: 65.2%;
@@ -36,9 +35,6 @@
       background: transparent;
       text-decoration: none;
       cursor: pointer;
-      /* DEBUG: descomente para ver os botões
-      background: rgba(255,0,0,0.3);
-      */
     }
   </style>
 </head>
@@ -51,25 +47,24 @@
     alt="Trifor Caps – Farmácia Hélio"
   />
 
-  <!-- Botão WhatsApp (1/3 esquerda) -->
-  <a class="btn-overlay"
-     href="https://wa.me/5588992237250"
-     target="_blank"
-     aria-label="WhatsApp"
-  ></a>
+  <div class="btn-area">
+    <a class="btn-overlay"
+       href="https://wa.me/5588992237250"
+       target="_blank"
+       aria-label="WhatsApp"
+    ></a>
 
-  <!-- Botão Como Chegar (1/3 centro) -->
-  <a class="btn-overlay"
-     href="https://www.google.com/maps/search/Avenida+Dom+José+Tupinambá+da+Frota+1443+Sobral+CE"
-     target="_blank"
-     aria-label="Como Chegar"
-  ></a>
+    <a class="btn-overlay"
+       href="https://www.google.com/maps/search/Avenida+Dom+José+Tupinambá+da+Frota+1443+Sobral+CE"
+       target="_blank"
+       aria-label="Como Chegar"
+    ></a>
 
-  <!-- Botão Ligar (1/3 direita) -->
-  <a class="btn-overlay"
-     href="tel:+558836111227"
-     aria-label="Ligar"
-  ></a>
+    <a class="btn-overlay"
+       href="tel:+558836111227"
+       aria-label="Ligar"
+    ></a>
+  </div>
 
 </div>
 
