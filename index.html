@@ -3,32 +3,91 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Farmácia Hélio + Biolab</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
 
 body{
-background:#ffffff;
+  background:#ffffff;
+  display:flex;
+  justify-content:center;
 }
 
-img{
-width:100%;
-height:auto;
-display:block;
+.container{
+  position:relative;
+  width:100%;
+  max-width:1024px;
+}
+
+.container img{
+  width:100%;
+  display:block;
+}
+
+.hotspot{
+  position:absolute;
+  display:block;
+  z-index:10;
+}
+
+/* Botões invisíveis */
+.whatsapp{
+  left:4%;
+  top:70.2%;
+  width:31%;
+  height:7.7%;
+}
+
+.mapa{
+  left:36.5%;
+  top:70.2%;
+  width:28%;
+  height:7.7%;
+}
+
+.ligar{
+  left:66.5%;
+  top:70.2%;
+  width:30%;
+  height:7.7%;
+}
+
+.mapa-endereco{
+  left:4%;
+  top:80%;
+  width:47%;
+  height:9%;
 }
 </style>
-
 </head>
 
 <body>
 
-<img src="landing-trifor.png.png" alt="Farmácia Hélio + Biolab">
+<div class="container">
+
+  <img src="landing-trifor.png.png" alt="Farmácia Hélio + Biolab">
+
+  <a class="hotspot whatsapp"
+     href="https://wa.me/5588992237250?text=Ol%C3%A1%21%20Recebi%20uma%20amostra%20de%20Trifor%20Caps%20atrav%C3%A9s%20da%20parceria%20Biolab%20e%20gostaria%20de%20informa%C3%A7%C3%B5es."
+     target="_blank">
+  </a>
+
+  <a class="hotspot mapa"
+     href="https://www.google.com/maps/search/?api=1&query=Avenida%20Dom%20Jos%C3%A9%20Tupinamb%C3%A1%20da%20Frota%201443%20Centro%20Sobral%20CE"
+     target="_blank">
+  </a>
+
+  <a class="hotspot ligar"
+     href="tel:8836111227">
+  </a>
+
+  <a class="hotspot mapa-endereco"
+     href="https://www.google.com/maps/search/?api=1&query=Avenida%20Dom%20Jos%C3%A9%20Tupinamb%C3%A1%20da%20Frota%201443%20Centro%20Sobral%20CE"
+     target="_blank">
+  </a>
+
+</div>
 
 </body>
 </html>
